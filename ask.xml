@@ -488,7 +488,7 @@
                                                                               <block type="oled_cleardisplay" id="762">
                                                                                 <next>
                                                                                   <block type="oled_drawtext" id="763">
-                                                                                    <field name="TEXT">Well done</field>
+                                                                                    <field name="TEXT">Well done </field>
                                                                                     <next>
                                                                                       <block type="oled_drawnumber" id="764" inline="true">
                                                                                         <value name="NUMBER">
