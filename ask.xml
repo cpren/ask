@@ -226,7 +226,7 @@
                                                                     </value>
                                                                     <next>
                                                                       <block type="controls_if" id="886" inline="false">
-                                                                        <mutation elseif="1"></mutation>
+                                                                        <mutation else="1"></mutation>
                                                                         <value name="IF0">
                                                                           <block type="logic_compare" id="887" inline="true">
                                                                             <field name="OP">LT</field>
@@ -260,7 +260,7 @@
                                                                             </next>
                                                                           </block>
                                                                         </statement>
-                                                                        <statement name="DO1">
+                                                                        <statement name="ELSE">
                                                                           <block type="controls_if" id="566" inline="false">
                                                                             <mutation elseif="8" else="1"></mutation>
                                                                             <value name="IF0">
