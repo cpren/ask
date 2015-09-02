@@ -46,8 +46,22 @@
                           </block>
                         </value>
                         <next>
-                          <block type="oled_drawtext" id="54">
-                            <field name="TEXT">NOW</field>
+                          <block type="oled_setcursor" id="64" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="65">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="66">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="54">
+                                <field name="TEXT">NOW</field>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
