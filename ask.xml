@@ -92,7 +92,7 @@
                                           <block type="robot_delay" id="240" inline="true">
                                             <value name="DELAY">
                                               <block type="math_number" id="247">
-                                                <field name="NUM">10</field>
+                                                <field name="NUM">1</field>
                                               </block>
                                             </value>
                                             <next>
@@ -101,18 +101,8 @@
                                                   <block type="logic_compare" id="298" inline="true">
                                                     <field name="OP">EQ</field>
                                                     <value name="A">
-                                                      <block type="math_arithmetic" id="284" inline="true">
-                                                        <field name="OP">DIVIDE</field>
-                                                        <value name="A">
-                                                          <block type="variables_get" id="277">
-                                                            <field name="VAR">timepass</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="B">
-                                                          <block type="math_number" id="291">
-                                                            <field name="NUM">10</field>
-                                                          </block>
-                                                        </value>
+                                                      <block type="variables_get" id="277">
+                                                        <field name="VAR">timepass</field>
                                                       </block>
                                                     </value>
                                                     <value name="B">
