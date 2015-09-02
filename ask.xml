@@ -55,48 +55,112 @@
                               </block>
                             </value>
                             <next>
-                              <block type="robot_delay" id="32" inline="true">
-                                <value name="DELAY">
-                                  <block type="variables_get" id="122">
-                                    <field name="VAR">timepass</field>
+                              <block type="variables_set" id="155" inline="true">
+                                <field name="VAR">reactiontime</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="162">
+                                    <field name="NUM">0</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_setcursor" id="64" inline="true">
-                                    <value name="STARTX">
-                                      <block type="math_number" id="65">
-                                        <field name="NUM">50</field>
+                                  <block type="controls_whileUntil" id="142" inline="false">
+                                    <field name="MODE">UNTIL</field>
+                                    <value name="NUMBER">
+                                      <block type="sensor_button" id="149">
+                                        <field name="OBJECT">ENTER</field>
                                       </block>
                                     </value>
-                                    <value name="STARTY">
-                                      <block type="math_number" id="66">
-                                        <field name="NUM">35</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="oled_drawtext" id="54">
-                                        <field name="TEXT">NOW</field>
-                                        <next>
-                                          <block type="oled_setcursor" id="110" inline="true">
-                                            <value name="STARTX">
-                                              <block type="math_number" id="111">
-                                                <field name="NUM">70</field>
+                                    <statement name="DO">
+                                      <block type="variables_set" id="170" inline="true">
+                                        <field name="VAR">reactiontime</field>
+                                        <value name="VALUE">
+                                          <block type="math_arithmetic" id="177" inline="true">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="231">
+                                                <field name="VAR">reactiontime</field>
                                               </block>
                                             </value>
-                                            <value name="STARTY">
-                                              <block type="math_number" id="112">
-                                                <field name="NUM">35</field>
+                                            <value name="B">
+                                              <block type="math_number" id="238">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="robot_delay" id="240" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="247">
+                                                <field name="NUM">10</field>
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="oled_drawnumber" id="99" inline="true">
-                                                <value name="NUMBER">
-                                                  <block type="variables_get" id="128">
-                                                    <field name="VAR">timepass</field>
+                                              <block type="controls_if" id="305" inline="false">
+                                                <value name="IF0">
+                                                  <block type="logic_compare" id="298" inline="true">
+                                                    <field name="OP">EQ</field>
+                                                    <value name="A">
+                                                      <block type="math_arithmetic" id="284" inline="true">
+                                                        <field name="OP">DIVIDE</field>
+                                                        <value name="A">
+                                                          <block type="variables_get" id="277">
+                                                            <field name="VAR">timepass</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="291">
+                                                            <field name="NUM">10</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="variables_get" id="313">
+                                                        <field name="VAR">reactiontime</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
+                                                <statement name="DO0">
+                                                  <block type="oled_setcursor" id="64" inline="true">
+                                                    <value name="STARTX">
+                                                      <block type="math_number" id="65">
+                                                        <field name="NUM">50</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="STARTY">
+                                                      <block type="math_number" id="66">
+                                                        <field name="NUM">35</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_drawtext" id="54">
+                                                        <field name="TEXT">NOW</field>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
                                               </block>
                                             </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="oled_drawnumber" id="340" inline="true">
+                                        <value name="NUMBER">
+                                          <block type="variables_get" id="348">
+                                            <field name="VAR">reactiontime</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_drawnumber" id="357" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="variables_get" id="365">
+                                                <field name="VAR">timepass</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </next>
                                       </block>
