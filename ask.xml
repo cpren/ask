@@ -212,6 +212,24 @@
                                                                     <field name="VAR">delta</field>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="robot_delay" id="496" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="math_number" id="503">
+                                                                        <field name="NUM">500</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="oled_cleardisplay" id="494">
+                                                                        <next>
+                                                                          <block type="oled_drawtext" id="485">
+                                                                            <field name="TEXT">Adam you slow ass</field>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
