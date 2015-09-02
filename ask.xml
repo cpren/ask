@@ -441,7 +441,7 @@
                                                                               <block type="oled_cleardisplay" id="754">
                                                                                 <next>
                                                                                   <block type="oled_drawtext" id="755">
-                                                                                    <field name="TEXT">Well done </field>
+                                                                                    <field name="TEXT">Nice</field>
                                                                                     <next>
                                                                                       <block type="oled_drawnumber" id="756" inline="true">
                                                                                         <value name="NUMBER">
@@ -488,7 +488,7 @@
                                                                               <block type="oled_cleardisplay" id="762">
                                                                                 <next>
                                                                                   <block type="oled_drawtext" id="763">
-                                                                                    <field name="TEXT">Average </field>
+                                                                                    <field name="TEXT">Well done</field>
                                                                                     <next>
                                                                                       <block type="oled_drawnumber" id="764" inline="true">
                                                                                         <value name="NUMBER">
@@ -543,11 +543,6 @@
                                                                                             <field name="VAR">delta</field>
                                                                                           </block>
                                                                                         </value>
-                                                                                        <next>
-                                                                                          <block type="oled_drawtext" id="750">
-                                                                                            <field name="TEXT">!</field>
-                                                                                          </block>
-                                                                                        </next>
                                                                                       </block>
                                                                                     </next>
                                                                                   </block>
