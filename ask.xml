@@ -628,6 +628,33 @@
                                                                         </next>
                                                                       </block>
                                                                     </statement>
+                                                                    <next>
+                                                                      <block type="robot_delay" id="795" inline="true">
+                                                                        <value name="DELAY">
+                                                                          <block type="math_number" id="796">
+                                                                            <field name="NUM">1000</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="oled_cleardisplay" id="797">
+                                                                            <next>
+                                                                              <block type="oled_drawtext" id="798">
+                                                                                <field name="TEXT">Not so good</field>
+                                                                                <next>
+                                                                                  <block type="oled_drawnumber" id="799" inline="true">
+                                                                                    <value name="NUMBER">
+                                                                                      <block type="variables_get" id="800">
+                                                                                        <field name="VAR">delta</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
