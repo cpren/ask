@@ -226,7 +226,7 @@
                                                                     </value>
                                                                     <next>
                                                                       <block type="controls_if" id="566" inline="false">
-                                                                        <mutation elseif="8"></mutation>
+                                                                        <mutation elseif="8" else="1"></mutation>
                                                                         <value name="IF0">
                                                                           <block type="logic_compare" id="581" inline="true">
                                                                             <field name="OP">LT</field>
@@ -640,7 +640,7 @@
                                                                             </next>
                                                                           </block>
                                                                         </statement>
-                                                                        <next>
+                                                                        <statement name="ELSE">
                                                                           <block type="robot_delay" id="795" inline="true">
                                                                             <value name="DELAY">
                                                                               <block type="math_number" id="796">
@@ -666,7 +666,7 @@
                                                                               </block>
                                                                             </next>
                                                                           </block>
-                                                                        </next>
+                                                                        </statement>
                                                                       </block>
                                                                     </next>
                                                                   </block>
